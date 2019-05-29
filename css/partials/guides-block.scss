@@ -1,0 +1,46 @@
+#guides-block.grid-bg {
+  background: url("/image/grid-bg.png") no-repeat;
+  background-size: cover;
+}
+
+.guides-block {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.guides-item {
+  width: 40%;
+  &__logo {
+    margin-bottom: 15px;
+  }
+  &__grid-block {
+    background: url("/image/area-bg-1.png") no-repeat;
+    background-size: 100%;
+    background-position: 15px 0;
+    width: 353px;
+    height: 75px;
+    opacity: 0;
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  &__area-block {
+    background: url("/image/area-bg-2.png") no-repeat;
+    background-size: 100%;
+    background-position: 15px 0;
+    width: 290px;
+    height: 93px;
+    opacity: 0;
+    &.show {
+      opacity: 1;
+    }
+  }
+  &__heading {
+  margin-bottom: 40px;
+  }
+  &__dscr {
+
+  }
+}

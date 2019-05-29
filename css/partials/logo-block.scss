@@ -1,0 +1,108 @@
+#logo-block {
+  background: $white;
+
+  &.revers-color {
+    background: $black;
+  }
+}
+
+.logo-block {
+  width: 80%;
+  padding: 130px 0;
+  display: flex;
+  justify-content: center;
+
+  &__heading {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+
+    &:after {
+      content: '';
+      background: url("/image/icons/black-block-logo-eye.png") no-repeat;
+      background-size: 100%;
+      width: 26px;
+      height: 17px;
+      right: 0;
+      bottom: 10px;
+    }
+
+    &.revers-color {
+      color: $white;
+    }
+  }
+
+  &__dscr {
+    display: inline-block;
+    width: 58%;
+    margin-right: 40px;
+
+    &.revers-color {
+      color: $white;
+    }
+  }
+
+  &__dscr-gray {
+    opacity: 0.5;
+    display: inline-block;
+    width: 38%;
+  }
+
+  &__logo {
+    margin: 170px 0;
+    width: 100%;
+    background: url("/image/icons/white-block-logo-logo.png") no-repeat;
+    background-size: 100%;
+
+    &.revers-color {
+      background: url("/image/icons/black-block-logo-logo.png") no-repeat;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .logo-block-bottom {
+    &__icons {
+    span {
+      &:nth-of-type(1) {
+        width: 31px;
+        height: 30px;
+        background: url("/image/icons/white-block-logo-ps.png") no-repeat;
+        background-size: 100%;
+        margin-right: 7px;
+      }
+      &:nth-of-type(2) {
+        width: 31px;
+        height: 30px;
+        background: url("/image/icons/white-block-logo-ai.png") no-repeat;
+        background-size: 100%;
+        margin-right: 50px;
+      }
+      &:nth-of-type(3) {
+        width: 66px;
+        height: 30px;
+        background: url("/image/icons/black-block-logo-share.png") no-repeat;
+        background-size: 100%;
+      }
+      }
+    }
+    &.revers-color {
+      span {
+        &:nth-of-type(1) {
+          background: url("/image/icons/black-block-logo-ps.png") no-repeat;
+        }
+        &:nth-of-type(2) {
+          background: url("/image/icons/black-block-logo-ai.png") no-repeat;
+        }
+      }
+    }
+    &__point {
+      width: 28px;
+      height: 27px;
+      background: url("/image/icons/white-block-logo-point.png") no-repeat;
+      background-size: 100%;
+    }
+  }
+}

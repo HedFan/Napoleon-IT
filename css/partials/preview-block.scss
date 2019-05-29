@@ -1,0 +1,16 @@
+#preview-block {
+  background: $white;
+}
+.preview-block {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding: 140px 0;
+  &__heading {
+    line-height: 47px;
+    width: 50%;
+  }
+  &__description {
+    width: 45%;
+  }
+}

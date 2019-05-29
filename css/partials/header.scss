@@ -1,0 +1,56 @@
+.header-block {
+  width: 100%;
+  display: flex;
+  max-width: 1150px;
+  padding: 15px 0;
+
+  &__logo {
+    width: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__menu {
+    ul {
+      width: 40%;
+      li {
+        a {
+          color: $black;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 21px;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          padding-bottom: 5px;
+          &:hover {
+            border-bottom: 1px solid $border;
+          }
+        }
+      }
+    }
+  }
+  &__search {
+    width: 15%;
+    a {
+      display: block;
+      position: relative;
+      &:before {
+        content: '';
+        width: 14px;
+        height: 15px;
+        background: url("/image/icons/search-icon.svg") no-repeat;
+        position: absolute;
+        background-size: 100%;
+      }
+
+    }
+  }
+}
+.header-bg {
+  background-color: $gray;
+  img {
+    width: 100%;
+  }
+}
