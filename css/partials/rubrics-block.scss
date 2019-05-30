@@ -9,7 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 190px 0;
+  flex-wrap: wrap;
+  height: 777px;
+  margin: auto;
 
   &__item {
 
@@ -18,29 +20,43 @@
 
 .rubrics-item {
   background: $white;
-  padding-top: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
-  margin: 0 15px;
+  margin: 0 20px;
+  width: 250px;
+  height: 330px;
+  position: relative;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 
   &--n-litera {
-    img {
-      width: 143px;
-      height: 165px;
-      -moz-transition: all 1s ease-out;
-      -o-transition: all 1s ease-out;
-      -webkit-transition: all 1s ease-out;
+    .rubrics-item__image {
+      top: -25px;
 
-      &:hover {
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
+      img {
+        width: 143px;
+        height: 165px;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+
+        &:hover {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -o-transform: scale(1.1);
+        }
       }
     }
   }
 
   &--cycle {
-    img {
-      cursor: url("/image/icons/cursor-picker-icon.svg"), pointer;
+    .rubrics-item__image {
+      top: -36px;
 
       &:before {
         content: '';
@@ -49,8 +65,8 @@
         width: 13px;
         height: 13px;
         background-size: 100%;
-        top: 45px;
-        left: 30px;
+        top: 40px;
+        left: 60px;
       }
 
       &:hover {
@@ -58,21 +74,28 @@
           display: none;
         }
       }
+
+      img {
+        cursor: url("/image/icons/cursor-picker-icon.svg"), pointer;
+      }
     }
   }
 
   &--um-litera {
-    img {
+    .rubrics-item__image {
+      top: -14px;
+
       &:after {
         content: '';
         background: url("/image/icons/line-icon.png") no-repeat;
         background-size: 100%;
-        width: 1px;
+        width: 2px;
         height: 146px;
         position: absolute;
-        bottom: -10px;
-        right: -10px;
+        bottom: -40px;
+        right: 30px;
       }
+
       &:hover {
         &:after {
           -webkit-animation: blink 1s linear infinite;
@@ -83,7 +106,9 @@
   }
 
   &--template {
-    img {
+    .rubrics-item__image {
+      top: -13px;
+
       &:before {
         content: '';
         background: url("/image/icons/folder-front.png") no-repeat;
@@ -91,6 +116,8 @@
         width: 198px;
         height: 131px;
         position: absolute;
+        bottom: -2px;
+        z-index: 9;
       }
 
       &:after {
@@ -100,6 +127,8 @@
         width: 49px;
         height: 116px;
         position: absolute;
+        top: -14px;
+        right: 50px;
       }
 
       &:hover {
@@ -111,16 +140,27 @@
     }
   }
 
+  &__info {
+    position: absolute;
+    bottom: 54px;
+    padding: 0 27px;
+  }
+
   &__image {
     width: 100%;
     display: block;
     position: relative;
+    text-align: center;
   }
 
   &__heading {
     a {
       position: relative;
-
+      color: $black;
+      font-size: 25px;
+      font-weight: 400;
+      display: block;
+      margin-bottom: 5px;
       &:after {
         content: '';
         position: absolute;
@@ -129,12 +169,16 @@
         width: 17px;
         height: 12px;
         right: 0;
-        top: 5px;
+        top: calc(50% - 6px);
       }
     }
   }
 
   &__dscr {
+    color: $black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
   }
 }
 
@@ -149,9 +193,15 @@
     transform: translateX(-30px);
   }
 }
+
 @-webkit-keyframes blink {
-  100% { color: rgba(34, 34, 34, 0); }
+  100% {
+    opacity: 0
+  }
 }
+
 @keyframes blink {
-  100% { color: rgba(34, 34, 34, 0); }
+  100% {
+    opacity: 0
+  }
 }

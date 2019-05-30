@@ -9,25 +9,27 @@
 </head>
 <body>
 <header>
-    <div class="header-block">
-        <div class="header-block__logo"><a href="javascript:void[0]"><img src="image/icons/logo.png" alt="logo"></a>
+    <div class="header-block js_header-block">
+        <div class="header-block__container">
+            <div class="header-block__logo"><a href="javascript:void[0]"><img src="image/icons/logo.png" alt="logo"></a>
+            </div>
+            <div class="header-block__menu">
+                <ul>
+                    <li><a href="#logo-block">Логотип</a></li>
+                    <li><a href="#font-block">Шрифт</a></li>
+                    <li><a href="#color-block">Цвет</a></li>
+                    <li><a href="#template-block">Исходники</a></li>
+                </ul>
+            </div>
+            <div class="header-block__search"><a href="javascript:void[0]"></a></div>
         </div>
-        <div class="header-block__menu">
-            <ul>
-                <li><a href="#logo-block">Логотип</a></li>
-                <li><a href="#font-block">Шрифт</a></li>
-                <li><a href="#color-block">Цвет</a></li>
-                <li><a href="#template-block">Исходники</a></li>
-            </ul>
-        </div>
-        <div class="header-block__search"><a href="javascript:void[0]"></a></div>
     </div>
-    <div class="header-bg"><img src="image/bg/bg_1.jpg" alt="background"></div>
+    <div class="header-bg js_header-bg"><img src="image/bg/bg_1.jpg" alt="background"></div>
 </header>
-<section id="preview-block">
+<section id="preview-block" class="js_preview-block">
     <div class="preview-block">
         <h2 class="preview-block__heading">Рекомендации
-            и исходники
+            и&nbsp;исходники
         </h2>
         <h6 class="preview-block__description">Привет! На этом сайте ты найдешь всю необходимую информацию, чтобы
             создать новый макет
@@ -40,24 +42,33 @@
     <div class="rubrics-block">
         <div class="rubrics-block__item rubrics-item rubrics-item--n-litera">
             <div class="rubrics-item__image"><img src="image/icons/n-litera.png" alt="Логотип"></div>
-            <h2 class="rubrics-item__heading"><a href="#logo-block">Логотип</a></h2>
-            <h6 class="rubrics-item__dscr">Правила использования,
-                версии для скачивания</h6>
+            <div class="rubrics-item__info">
+                <div class="rubrics-item__heading"><a href="#logo-block">Логотип</a></div>
+                <div class="rubrics-item__dscr">Правила использования,
+                    версии для скачивания
+                </div>
+            </div>
         </div>
         <div class="rubrics-block__item rubrics-item rubrics-item--cycle">
             <div class="rubrics-item__image"><img src="image/icons/cycle.png" alt="Цвет"></div>
-            <h2 class="rubrics-item__heading"><a href="#color-block">Цвет</a></h2>
-            <h6 class="rubrics-item__dscr">Описание и правила использования</h6>
+            <div class="rubrics-item__info">
+                <div class="rubrics-item__heading"><a href="#color-block">Цвет</a></div>
+                <div class="rubrics-item__dscr">Описание и правила использования</div>
+            </div>
         </div>
         <div class="rubrics-block__item rubrics-item rubrics-item--um-litera">
             <div class="rubrics-item__image"><img src="image/icons/um-litera.png" alt="Шрифты"></div>
-            <h2 class="rubrics-item__heading"><a href="javascript:void[0]">Шрифты</a></h2>
-            <h6 class="rubrics-item__dscr">Схемы и типографика, работа с текстом</h6>
+            <div class="rubrics-item__info">
+                <div class="rubrics-item__heading"><a href="javascript:void[0]">Шрифты</a></div>
+                <div class="rubrics-item__dscr">Схемы и типографика, работа с текстом</div>
+            </div>
         </div>
         <div class="rubrics-block__item rubrics-item rubrics-item--template">
             <div class="rubrics-item__image"><img src="image/icons/folder-back.png" alt="Исходники"></div>
-            <h2 class="rubrics-item__heading"><a href="javascript:void[0]">Исходники</a></h2>
-            <h6 class="rubrics-item__dscr">Исходные макеты для изменения информации</h6>
+            <div class="rubrics-item__info">
+                <div class="rubrics-item__heading"><a href="javascript:void[0]">Исходники</a></div>
+                <div class="rubrics-item__dscr">Исходные макеты для изменения информации</div>
+            </div>
         </div>
     </div>
 </section>
@@ -84,62 +95,114 @@
             <div class="guides-item__logo"><img src="image/icons/logo-grid.png" alt=""></div>
             <div class="guides-item__grid-block js_area-block"></div>
             <h2 class="guides-item__heading">Сетка <span class="js_tumbler-grid"></span></h2>
-            <h6 class="guides-item__dscr">Каждый макет разработан на основе сетки. Вы можете скачать основные сетки для нескольких популярных макетов, чтобы разработка проходила легче</h6>
+            <h6 class="guides-item__dscr">Каждый макет разработан на основе сетки. Вы можете скачать основные сетки для
+                нескольких популярных макетов, чтобы разработка проходила легче</h6>
         </div>
         <div class="guides-block__item guides-item">
             <div class="guides-item__logo"><img src="image/icons/logo-area.png" alt=""></div>
             <div class="guides-item__area-block js_area-block"></div>
             <h2 class="guides-item__heading">Охранная зона<span class="js_tumbler-area"></span></h2>
-            <h6 class="guides-item__dscr">Логотипу необходим «воздух». Для разных ситуаций используется разный тип логотипа. Не стоит пренебрегать пространством вокруг логотипа.</h6>
+            <h6 class="guides-item__dscr">Логотипу необходим «воздух». Для разных ситуаций используется разный тип
+                логотипа. Не стоит пренебрегать пространством вокруг логотипа.</h6>
         </div>
     </div>
 </section>
 <section id="color-block">
     <div class="color-block">
-        <div class="color-block__heading">Цвета бренда</div>
-        <div class="color-block__dscr">Фундаментом палитры бренда служит сочетание четырёх цветов: красного, желтого, голубого, синего. Каждый цвет принадлежит одной из школ <span></span><span></span></div>
+        <div class="color-block__head">
+            <h2 class="color-block__heading">Цвета бренда</h2>
+            <h6 class="color-block__dscr">Фундаментом палитры бренда служит сочетание четырёх цветов: красного, желтого,
+                голубого, синего. Каждый цвет принадлежит одной из школ </h6>
+            <span></span><span></span>
+        </div>
         <div class="color-block__items color-items">
             <div class="color-items__item color-item color-item--dark-blue">
                 <div class="color-item__image"></div>
-                <div class="color-item__heading">Dark Blue</div>
-                <table>
-                    <tr><td>Hex</td><td>#a1d5ed</td></tr>
-                    <tr><td>RGB</td><td>161   213   237</td></tr>
-                    <tr><td>CMYK</td><td>34   4   2   0</td></tr>
-                </table>
+                <div class="color-item__info">
+                    <div class="color-item__heading">Dark Blue</div>
+                    <table>
+                        <tr>
+                            <td>Hex</td>
+                            <td>#a1d5ed</td>
+                        </tr>
+                        <tr>
+                            <td>RGB</td>
+                            <td>161 213 237</td>
+                        </tr>
+                        <tr>
+                            <td>CMYK</td>
+                            <td>34 4 2 0</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="color-items__item color-item color-item--blue">
                 <div class="color-item__image"></div>
-                <div class="color-item__heading">Blue</div>
-                <table>
-                    <tr><td>Hex</td><td>#a1d5ed</td></tr>
-                    <tr><td>RGB</td><td>161   213   237</td></tr>
-                    <tr><td>CMYK</td><td>34   4   2   0</td></tr>
-                </table>
+                <div class="color-item__info">
+                    <div class="color-item__heading">Blue</div>
+                    <table>
+                        <tr>
+                            <td>Hex</td>
+                            <td>#a1d5ed</td>
+                        </tr>
+                        <tr>
+                            <td>RGB</td>
+                            <td>161 213 237</td>
+                        </tr>
+                        <tr>
+                            <td>CMYK</td>
+                            <td>34 4 2 0</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="color-items__item color-item color-item--yellow">
                 <div class="color-item__image"></div>
-                <div class="color-item__heading">Yellow</div>
-                <table>
-                    <tr><td>Hex</td><td>#a1d5ed</td></tr>
-                    <tr><td>RGB</td><td>161   213   237</td></tr>
-                    <tr><td>CMYK</td><td>34   4   2   0</td></tr>
-                </table>
+                <div class="color-item__info">
+                    <div class="color-item__heading">Yellow</div>
+                    <table>
+                        <tr>
+                            <td>Hex</td>
+                            <td>#a1d5ed</td>
+                        </tr>
+                        <tr>
+                            <td>RGB</td>
+                            <td>161 213 237</td>
+                        </tr>
+                        <tr>
+                            <td>CMYK</td>
+                            <td>34 4 2 0</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="color-items__item color-item color-item--red">
                 <div class="color-item__image"></div>
-                <div class="color-item__heading">Red</div>
-                <table>
-                    <tr><td>Hex</td><td>#a1d5ed</td></tr>
-                    <tr><td>RGB</td><td>161   213   237</td></tr>
-                    <tr><td>CMYK</td><td>34   4   2   0</td></tr>
-                </table>
+                <div class="color-item__info">
+                    <div class="color-item__heading">Red</div>
+                    <table>
+                        <tr>
+                            <td>Hex</td>
+                            <td>#a1d5ed</td>
+                        </tr>
+                        <tr>
+                            <td>RGB</td>
+                            <td>161 213 237</td>
+                        </tr>
+                        <tr>
+                            <td>CMYK</td>
+                            <td>34 4 2 0</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
         <div class="color-block__add-items color-add-items">
             <div class="color-add-items__left">
-                <div class="color-add-items__heading">Дополнительные</div>
-                <div class="color-add-items__dscr">Черный и белый цвет используется для написаний заголовков и основного текста</div>
+                <h2 class="color-add-items__heading">Дополнительные</h2>
+                <h6 class="color-add-items__dscr">Черный и белый цвет используется для написаний заголовков и основного
+                    текста
+                </h6>
             </div>
             <div class="color-add-items__right color-add-right">
                 <div class="color-add-right__item color-add-right__item--black">

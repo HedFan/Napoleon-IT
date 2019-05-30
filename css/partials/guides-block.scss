@@ -4,15 +4,17 @@
 }
 
 .guides-block {
-  width: 80%;
+  width: 52.5%;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 120px 0;
 }
 
 .guides-item {
   width: 40%;
   &__logo {
-    margin-bottom: 15px;
+    margin-bottom: 93px;
   }
   &__grid-block {
     background: url("/image/area-bg-1.png") no-repeat;
@@ -21,6 +23,8 @@
     width: 353px;
     height: 75px;
     opacity: 0;
+    margin-left: -65px;
+    margin-bottom: 12px;
     &.show {
       opacity: 1;
     }
@@ -38,9 +42,50 @@
     }
   }
   &__heading {
-  margin-bottom: 40px;
+    margin-bottom: 28px;
+    position: relative;
+    span {
+      background: url("/image/icons/tumbler-off.svg") no-repeat;
+      width: 37px;
+      height: 19px;
+      background-size: 100%;
+      cursor: pointer;
+      position: absolute;
+      right: -12px;
+      top: 25px;
+      &.active {
+        background: url("/image/icons/tumbler-on.svg") no-repeat;
+      }
+
+    }
   }
   &__dscr {
 
+  }
+  &:first-of-type {
+    .guides-item__heading {
+      &:before {
+        content: 'Кликни сюда';
+        width: 80px;
+        height: 12px;
+        position: absolute;
+        right: 60px;
+        top: -19px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: -0.3px;
+      }
+      &:after {
+        content: '';
+        width: 38px;
+        height: 34px;
+        background: url("/image/icons/rounded_rectangle.svg") no-repeat;
+        background-size: 100%;
+        position: absolute;
+        right: 0;
+        top: -13px;
+      }
+    }
   }
 }

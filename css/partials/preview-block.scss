@@ -1,16 +1,22 @@
 #preview-block {
   background: $white;
+    margin-top: 692px;
 }
 .preview-block {
-  width: 45%;
+  width: 40.6%;
   display: flex;
   align-items: center;
   padding: 140px 0;
+  margin: auto;
   &__heading {
     line-height: 47px;
     width: 50%;
+    text-align: left;
+    margin: auto;
   }
   &__description {
-    width: 45%;
+    width: 50%;
+    text-align: left;
+    margin: auto;
   }
 }

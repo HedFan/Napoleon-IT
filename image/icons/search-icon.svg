@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21"><defs><clipPath id="skmya"><path fill="#fff" d="M3.5 1.474a7 7 0 1 1 7 12.123 7 7 0 0 1-7-12.123z"/></clipPath><clipPath id="skmyb"><path fill="#fff" d="M15.134 19.16l-3.5-4.794"/></clipPath></defs><g><g><path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="50" stroke-width="4" d="M3.5 1.474a7 7 0 1 1 7 12.123 7 7 0 0 1-7-12.123z" clip-path="url(&quot;#skmya&quot;)"/></g><g><path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="50" stroke-width="4" d="M15.134 19.16l-3.5-4.794" clip-path="url(&quot;#skmyb&quot;)"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="21px" viewBox="0 0 17 21" enable-background="new 0 0 17 21" xml:space="preserve">  <image id="image0" width="17" height="21" x="0" y="0"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAVCAAAAACFl1owAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN
+RQfjBR4MGDseKORJAAAAuklEQVQY013PwVGEQBRF0csk0J2BZgAZ0K5dYAgu3RECZmAokkGTQTMR
+YAY9GVwXQJX4lqde/Ve/EWC50/UcUacIED9VFWsH7Ti1kOouPSGr5ifeVcmEstdLIKsMTB6ZGFQC
+5ZSNqDbgOUuDcAv8nLASgFtiPmUmAWTicajGfcuB56xaIr1q4yPdSYl1pl3i8dcYAMLHa9k7wGNZ
+6dL6Ere4d870vKl/ZQt8XcVvKFdxpPsntQ31KtbNX1x20oMcqUiJAAAAJXRFWHRkYXRlOmNyZWF0
+ZQAyMDE5LTA1LTMwVDA5OjI0OjU5KzAzOjAwoN08OwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0w
+NS0zMFQwOToyNDo1OSswMzowMNGAhIcAAAAASUVORK5CYII=" />
+</svg>

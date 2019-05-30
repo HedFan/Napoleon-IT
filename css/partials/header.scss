@@ -1,21 +1,56 @@
 .header-block {
   width: 100%;
-  display: flex;
-  max-width: 1150px;
-  padding: 15px 0;
+  height: 52px;
+  background: $white;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  &.show {
+    box-shadow: 1px 1px 6px 1px #0000001f;
+  }
+
+  &.hide {
+    -o-transform: translateY(-52px);
+    -ms-transform: translateY(-52px);
+    -moz-transform: translateY(-52px);
+    -webkit-transform: translateY(-52px);
+    transform: translateY(-52px);
+  }
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1150px;
+    align-content: space-between;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
   &__logo {
-    width: 40%;
+    width: 49%;
 
     img {
       width: 100%;
+      max-width: 188px;
     }
   }
 
   &__menu {
     ul {
-      width: 40%;
+      width: 100%;
+
       li {
+        display: inline-block;
+        margin: 0 25px;
+
         a {
           color: $black;
           font-size: 12px;
@@ -23,19 +58,26 @@
           line-height: 21px;
           text-transform: uppercase;
           letter-spacing: 1.2px;
-          padding-bottom: 5px;
+          padding-bottom: 13px;
+
           &:hover {
-            border-bottom: 1px solid $border;
+            border-bottom: 3px solid #e84e33;
           }
         }
       }
     }
   }
+
   &__search {
-    width: 15%;
+    width: 5%;
+    height: 100%;
+    text-align: center;
+
     a {
       display: block;
       position: relative;
+      height: 100%;
+
       &:before {
         content: '';
         width: 14px;
@@ -43,13 +85,20 @@
         background: url("/image/icons/search-icon.svg") no-repeat;
         position: absolute;
         background-size: 100%;
+        top: calc(50% - 7px);
       }
 
     }
   }
 }
+
 .header-bg {
-  background-color: $gray;
+    left: 0;
+    right: 0;
+    height: 642px;
+    position: fixed;
+    z-index: -1;
+    top: 52px;
   img {
     width: 100%;
   }

@@ -1,19 +1,17 @@
 #logo-block {
   background: $white;
 
-  &.revers-color {
+  &.reverse-color {
     background: $black;
   }
 }
 
 .logo-block {
-  width: 80%;
+  width: 32.6%;
   padding: 130px 0;
-  display: flex;
-  justify-content: center;
-
+margin: auto;
   &__heading {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
     width: 100%;
     position: relative;
 
@@ -27,25 +25,27 @@
       bottom: 10px;
     }
 
-    &.revers-color {
+    &.reverse-color {
       color: $white;
     }
   }
 
   &__dscr {
     display: inline-block;
-    width: 58%;
-    margin-right: 40px;
+    width: 67%;
+    margin-right: 33px;
 
-    &.revers-color {
+    &.reverse-color {
       color: $white;
     }
   }
 
   &__dscr-gray {
-    opacity: 0.5;
+    color: $light-gray;
     display: inline-block;
-    width: 38%;
+    width: 27%;
+    font-size: 14px;
+
   }
 
   &__logo {
@@ -53,9 +53,10 @@
     width: 100%;
     background: url("/image/icons/white-block-logo-logo.png") no-repeat;
     background-size: 100%;
-
-    &.revers-color {
+    height: 29px;
+    &.reverse-color {
       background: url("/image/icons/black-block-logo-logo.png") no-repeat;
+      background-size: 100%;
     }
   }
   &__bottom {
@@ -65,30 +66,34 @@
   }
   .logo-block-bottom {
     &__icons {
+      width: calc(100% - 28px);
+      position: relative;
     span {
+      position: absolute;
       &:nth-of-type(1) {
         width: 31px;
         height: 30px;
         background: url("/image/icons/white-block-logo-ps.png") no-repeat;
         background-size: 100%;
-        margin-right: 7px;
+        left: 0;
       }
       &:nth-of-type(2) {
         width: 31px;
         height: 30px;
         background: url("/image/icons/white-block-logo-ai.png") no-repeat;
         background-size: 100%;
-        margin-right: 50px;
+        left: 38px;
       }
       &:nth-of-type(3) {
         width: 66px;
         height: 30px;
         background: url("/image/icons/black-block-logo-share.png") no-repeat;
         background-size: 100%;
+        left: 118px;
       }
       }
     }
-    &.revers-color {
+    &.reverse-color {
       span {
         &:nth-of-type(1) {
           background: url("/image/icons/black-block-logo-ps.png") no-repeat;
@@ -103,6 +108,7 @@
       height: 27px;
       background: url("/image/icons/white-block-logo-point.png") no-repeat;
       background-size: 100%;
+      cursor: pointer;
     }
   }
 }
