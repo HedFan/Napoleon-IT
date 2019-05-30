@@ -1,5 +1,5 @@
 #guides-block.grid-bg {
-  background-image: url("/image/grid-bg.png");
+  background-image: url("../image/grid-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,7 +18,7 @@
     margin-bottom: 93px;
   }
   &__grid-block {
-    background: url("/image/area-bg-1.png") no-repeat;
+    background: url("../image/area-bg-1.png") no-repeat;
     background-size: 100%;
     width: 353px;
     height: 75px;
@@ -31,7 +31,7 @@
   }
 
   &__area-block {
-    background: url("/image/area-bg-2.png") no-repeat;
+    background: url("../image/area-bg-2.png") no-repeat;
     background-size: 100%;
     width: 290px;
     height: 93px;
@@ -45,7 +45,7 @@
     margin-bottom: 28px;
     position: relative;
     span {
-      background: url("/image/icons/tumbler-off.svg") no-repeat;
+      background: url("../image/icons/tumbler-off.svg") no-repeat;
       width: 37px;
       height: 19px;
       background-size: 100%;
@@ -54,7 +54,7 @@
       right: -12px;
       top: 23px;
       &.active {
-        background: url("/image/icons/tumbler-on.svg") no-repeat;
+        background: url("../image/icons/tumbler-on.svg") no-repeat;
       }
 
     }
@@ -80,7 +80,7 @@
         content: '';
         width: 38px;
         height: 34px;
-        background: url("/image/icons/rounded_rectangle.svg") no-repeat;
+        background: url("../image/icons/rounded_rectangle.svg") no-repeat;
         background-size: 100%;
         position: absolute;
         right: 0;

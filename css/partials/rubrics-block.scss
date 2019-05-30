@@ -1,5 +1,5 @@
 #rubrics-block {
-  background: url("/image/bg/dg_2.jpg") no-repeat;
+  background: url("../image/bg/dg_2.jpg") no-repeat;
   background-size: cover;
   width: 100%;
 }
@@ -56,7 +56,7 @@
 
       &:before {
         content: '';
-        background: url("/image/icons/cursor-picker-icon.svg") no-repeat;
+        background: url("../image/icons/cursor-picker-icon.svg") no-repeat;
         position: absolute;
         width: 13px;
         height: 13px;
@@ -72,7 +72,7 @@
       }
 
       img {
-        cursor: url("/image/icons/cursor-picker-icon.svg"), pointer;
+        cursor: url("../image/icons/cursor-picker-icon.svg"), pointer;
       }
     }
   }
@@ -83,7 +83,7 @@
 
       &:after {
         content: '';
-        background: url("/image/icons/line-icon.png") no-repeat;
+        background: url("../image/icons/line-icon.png") no-repeat;
         background-size: 100%;
         width: 2px;
         height: 146px;
@@ -107,7 +107,7 @@
 
       &:before {
         content: '';
-        background: url("/image/icons/folder-front.png") no-repeat;
+        background: url("../image/icons/folder-front.png") no-repeat;
         background-size: 100%;
         width: 198px;
         height: 131px;
@@ -118,7 +118,7 @@
 
       &:after {
         content: '';
-        background: url("/image/icons/folder-flag.png") no-repeat;
+        background: url("../image/icons/folder-flag.png") no-repeat;
         background-size: 100%;
         width: 49px;
         height: 116px;
@@ -160,7 +160,7 @@
       &:after {
         content: '';
         position: absolute;
-        background: url("/image/icons/arrow-link.svg") no-repeat;
+        background: url("../image/icons/arrow-link.svg") no-repeat;
         background-size: 100%;
         width: 17px;
         height: 12px;
