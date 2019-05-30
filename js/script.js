@@ -1,13 +1,12 @@
+//появление\скрытие меню
 function scrollMenu() {
     let lastScroll = 0;
     $(window).on('scroll', function(e) {
         let pos = $(this).scrollTop(),
             header = $('.js_header-block');
-
-        if (lastScroll < pos) {
+        if (lastScroll < pos && pos > 720) {
             header.addClass('hide');
             header.removeClass('show')
-
         }
         if (pos === 0) {
             header.removeClass('hide');
@@ -18,10 +17,43 @@ function scrollMenu() {
             header.removeClass('hide')
         }
         lastScroll = pos;
-
     })
 }
 
+//реверс цвета для блока "Логотип"
+function pointClick() {
+    $('.js_color-change-point').on('click', function() {
+        $('.js_color-change').toggleClass('reverse-color')
+    })
+}
+
+//переключение тумблеров
+function tublers() {
+    $('.js_tumbler-grid').on('click', function() {
+        $(this).parents('.js_guides-block').toggleClass('grid-bg');
+        $(this).toggleClass('active');
+    });
+    $('.js_tumbler-area').on('click', function() {
+        $('.js_area-block').toggleClass('show');
+        $(this).toggleClass('active');
+    })
+}
+
+//плавный переход к якорям
+function anchors() {
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        var sc = $(this).attr("href"),
+            dn = $(sc).offset().top - 25;
+
+        $('html, body').animate({scrollTop: dn}, 1000);
+    });
+}
+
 $(window).ready(function() {
-    scrollMenu()
+    scrollMenu();
+    pointClick();
+    tublers();
+    anchors()
 });

@@ -1,5 +1,6 @@
 #guides-block.grid-bg {
-  background: url("/image/grid-bg.png") no-repeat;
+  background-image: url("/image/grid-bg.png");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -19,12 +20,11 @@
   &__grid-block {
     background: url("/image/area-bg-1.png") no-repeat;
     background-size: 100%;
-    background-position: 15px 0;
     width: 353px;
     height: 75px;
     opacity: 0;
-    margin-left: -65px;
-    margin-bottom: 12px;
+    margin-left: -60px;
+    margin-bottom: 26px;
     &.show {
       opacity: 1;
     }
@@ -33,10 +33,10 @@
   &__area-block {
     background: url("/image/area-bg-2.png") no-repeat;
     background-size: 100%;
-    background-position: 15px 0;
     width: 290px;
     height: 93px;
     opacity: 0;
+    margin: -23px 0 10px -57px;
     &.show {
       opacity: 1;
     }
@@ -52,7 +52,7 @@
       cursor: pointer;
       position: absolute;
       right: -12px;
-      top: 25px;
+      top: 23px;
       &.active {
         background: url("/image/icons/tumbler-on.svg") no-repeat;
       }
@@ -70,7 +70,7 @@
         height: 12px;
         position: absolute;
         right: 60px;
-        top: -19px;
+        top: -31px;
         font-size: 14px;
         font-weight: 700;
         line-height: 16px;
@@ -84,7 +84,7 @@
         background-size: 100%;
         position: absolute;
         right: 0;
-        top: -13px;
+        top: -24px;
       }
     }
   }

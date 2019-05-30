@@ -22,7 +22,8 @@ margin: auto;
       width: 26px;
       height: 17px;
       right: 0;
-      bottom: 10px;
+      bottom: 18px;
+      position: absolute;
     }
 
     &.reverse-color {
@@ -45,7 +46,6 @@ margin: auto;
     display: inline-block;
     width: 27%;
     font-size: 14px;
-
   }
 
   &__logo {
