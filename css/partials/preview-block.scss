@@ -1,13 +1,12 @@
 #preview-block {
-  background: $white;
     margin-top: 692px;
 }
 .preview-block {
   width: 40.6%;
   display: flex;
   align-items: center;
-  padding: 140px 0;
   margin: auto;
+  height: 370px;
   &__heading {
     line-height: 47px;
     width: 50%;
