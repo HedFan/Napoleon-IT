@@ -10,22 +10,37 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     browserSync = require("browser-sync"),
     concat = require('gulp-concat'),
-    modifyCssUrls = require('gulp-modify-css-urls');
+    modifyCssUrls = require('gulp-modify-css-urls'),
+    pug = require('gulp-pug'),
+    htmlbeautify = require('gulp-html-beautify');
 
 var custom_path = {
     src: {
         style: 'css/style.scss',
-        font: 'css/fonts/**/*.css'
+        font: 'css/fonts/**/*.css',
+        pug: 'pug/**/*.pug'
 
     },
     build: {
         style: 'css/',
-        font: 'css/'
+        font: 'css/',
+        pug: 'html'
     },
     watch: {
         style: 'css/**/*.scss',
+        pug: 'pug/**/*.pug'
     },
 };
+
+gulp.task('pug:build', gulp.series(function (done) {
+    gulp.src(custom_path.src.pug)
+        .pipe(plumber())
+        .pipe(pug())
+        .pipe(gulp.dest(custom_path.build.pug))
+        .pipe(htmlbeautify())
+        .pipe(browserSync.stream());
+    done();
+}));
 
 
 gulp.task('font:build', gulp.series(function (done) {
@@ -43,8 +58,6 @@ gulp.task('font:build', gulp.series(function (done) {
         .pipe(gulp.dest(custom_path.build.font));
     done();
 }));
-
-
 
 gulp.task('browser-sync', gulp.series(function (done) {
     var files = [
@@ -83,6 +96,7 @@ gulp.task('style:build', gulp.series(function (done) {
 
 gulp.task('watch', gulp.series(function (done) {
     gulp.watch([custom_path.watch.style], gulp.series('style:build'));
+    gulp.watch([custom_path.watch.pug], gulp.series('pug:build'));
     done();
 }));
 

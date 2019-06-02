@@ -1,0 +1,38 @@
+- var colorItems = [{class: "dark-blue", head: "Dark Blue", hex: "#a1d5ed", rgb: "161 213 237", cmyk: "34 4 2 0"}, {class: "blue", head: "Blue", hex: "#a1d5ed", rgb: "161 213 237", cmyk: "34 4 2 0"}, {class: "yellow", head: "Yellow", hex: "#a1d5ed", rgb: "161 213 237", cmyk: "34 4 2 0"}, {class: "red", head: "Red", hex: "#a1d5ed", rgb: "161 213 237", cmyk: "34 4 2 0"}]
+- var bwItems = [{class: "black", head: "Black", val: "#000000"}, {class: "white", head: "White", val: "#FFFFFF"}]
+.color-block
+ .color-block__head
+  h2.color-block__heading Цвета бренда
+  h6.color-block__dscr Фундаментом палитры бренда служит сочетание четырёх цветов: красного, желтого, голубого, синего. Каждый цвет принадлежит одной из школ
+  - for (var x = 0; x < 2; x++)
+       span
+ .color-block__items.color-items
+   each colorItem in colorItems
+    .color-items__item.color-item(class=`color-item--${colorItem.class}`)
+     .color-item__image
+     .color-item__info
+      .color-item__heading= colorItem.head
+      table
+       tr
+        td= Hex
+        td= colorItem.hex
+       tr
+        td= RGB
+        td= colorItem.rgb
+       tr
+        td= CMYK
+        td= colorItem.cmyk
+ .color-block__add-items.color-add-items
+  .color-add-items__left
+   h2.color-add-items__heading Дополнительные
+   h6.color-add-items__dscr Черный и белый цвет используется для написаний заголовков и основного текста
+  .color-add-items__right.color-add-right
+   each bwItem in bwItems
+    .color-add-right__item(class=`color-add-right__item--${bwItem.class}`)
+     .color-add-right__heading
+      span= bwItem.head
+      span= bwItem.val
+     .color-add-right__image
+
+
+

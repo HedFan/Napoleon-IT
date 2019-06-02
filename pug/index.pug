@@ -1,0 +1,32 @@
+doctype
+html(lang="ru")
+ head
+  - var title = 'Napoleon IT'
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=1920")
+  title= title
+  block style
+        link(href='../css/fonts.min.css' rel="stylesheet")
+        link(href='../css/style.css' rel="stylesheet")
+ body
+  - var defLink = 'javascript:void[0]'
+  - var logoLink = '#logo-block'
+  - var colLink = '#color-block'
+  - var imgHrI = '../image/icons/'
+  - var imgHrBg = '../image/bg/'
+  header
+   include partials/header
+  section.js_preview-block#preview-block
+   include partials/preview-block
+  section#rubrics-block
+   include partials/rubrics-block
+  section.js_color-change#logo-block
+   include partials/logo-block
+  section.js_guides-block#guides-block
+   include partials/guides-block
+  section#color-block
+   include partials/color-block
+
+  block scripts
+         script(src='../js/lib/jquery-3.4.1.min.js')
+         script(src='../js/script.js')

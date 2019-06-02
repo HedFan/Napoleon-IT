@@ -1,0 +1,18 @@
+mixin menu(link, name)
+  li
+   a(href=link)= name
+.header-block.js_header-block
+ .header-block__container
+  .header-block__logo
+   a(href=defLink)
+    img(src=imgHrI + 'logo.png' alt=title)
+  .header-block__menu
+   ul
+    +menu(logoLink, 'Логотип')
+    +menu(defLink, 'Шрифт')
+    +menu(colLink, 'Цвет')
+    +menu(defLink, 'Исходники')
+  .header-block__search
+   a(href=defLink)
+.header-bg.js_header-bg
+ img(src=imgHrBg + 'bg_1.jpg' alt="background")

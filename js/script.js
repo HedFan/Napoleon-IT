@@ -1,18 +1,34 @@
 //появление\скрытие меню
 function scrollMenu() {
-    let lastScroll = 0;
-    $(window).on('scroll', function(e) {
+    let lastScroll = 0,
+        Y = 0,
+        Yblock = 0,
+        header = $('.js_header-block');
+
+    function blabla() {
+        header.on('mouseenter', function () {
+            return Yblock = true;
+        });
+        header.on('mouseleave', function () {
+            return Yblock = false;
+        });
+        console.log(Yblock)
+    }
+
+
+    $(window).on('scroll mousemove', function (e) {
         let pos = $(this).scrollTop(),
-            header = $('.js_header-block');
-        if (lastScroll < pos && pos > 720) {
+            Y = e.clientY;
+
+        if ((lastScroll < pos && pos > 720)) {
             header.addClass('hide');
-            header.removeClass('show')
+            header.removeClass('show');
         }
         if (pos === 0) {
             header.removeClass('hide');
             header.removeClass('show')
-        }
-        else if (lastScroll > pos) {
+
+        } else if ((lastScroll) > pos) {
             header.addClass('show');
             header.removeClass('hide')
         }
@@ -22,18 +38,18 @@ function scrollMenu() {
 
 //реверс цвета для блока "Логотип"
 function pointClick() {
-    $('.js_color-change-point').on('click', function() {
+    $('.js_color-change-point').on('click', function () {
         $('.js_color-change').toggleClass('reverse-color')
     })
 }
 
 //переключение тумблеров
 function tublers() {
-    $('.js_tumbler-grid').on('click', function() {
+    $('.js_tumbler-grid').on('click', function () {
         $(this).parents('.js_guides-block').toggleClass('grid-bg');
         $(this).toggleClass('active');
     });
-    $('.js_tumbler-area').on('click', function() {
+    $('.js_tumbler-area').on('click', function () {
         $('.js_area-block').toggleClass('show');
         $(this).toggleClass('active');
     })
@@ -41,7 +57,7 @@ function tublers() {
 
 //плавный переход к якорям
 function anchors() {
-    $('a[href^="#"]').on('click', function(e) {
+    $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
 
         var sc = $(this).attr("href"),
@@ -51,9 +67,11 @@ function anchors() {
     });
 }
 
-$(window).ready(function() {
+$(window).ready(function (e) {
     scrollMenu();
     pointClick();
     tublers();
-    anchors()
+    anchors();
+
+
 });

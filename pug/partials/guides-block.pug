@@ -1,0 +1,10 @@
+- var guidesItems = [{img: imgHrI + "logo-grid.png",class: "guides-item__grid-block", jsClass: "js_tumbler-grid", heading: "Сетка", dscr: "Каждый макет разработан на основе сетки. Вы можете скачать основные сетки для нескольких популярных макетов, чтобы разработка проходила легче"}, {img: imgHrI + "logo-area.png", class: "guides-item__area-block", jsClass: "js_tumbler-area", heading: "Охранная зона", dscr: "Логотипу необходим «воздух». Для разных ситуаций используется разный тип логотипа. Не стоит пренебрегать пространством вокруг логотипа."}]
+.guides-block
+  each guidesItem in guidesItems
+   .guides-block__item.guides-item
+    .guides-item__logo
+     img(src=guidesItem.img alt=guidesItem.heading)
+    .js_area-block(class=`${guidesItem.class}`)
+    h2.guides-item__heading= guidesItem.heading
+     span(class=`${guidesItem.jsClass}`)
+    h6.guides-item__dscr= guidesItem.dscr

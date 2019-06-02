@@ -1,0 +1,11 @@
+- var changeCl = 'js_color-change'
+div(class=`logo-block ` + changeCl)
+ h2(class=`logo-block__heading ` + changeCl) Логотип
+ h6(class=`logo-block__dscr ` + changeCl) В основе метафоры логотипа использован «слеш» — один из базовых элементов интернет-адреса. Он работает как символ вложенности, обозначая стратегию
+ .logo-block__dscr-gray Логотип создан на основе главного логотипа компании
+ div(class=`logo-block__logo ` + changeCl)
+ div(class=`logo-block__bottom logo-block-bottom ` + changeCl)
+  .logo-block-bottom__icons
+   - for (var x = 0; x < 3; x++)
+     span
+  .logo-block-bottom__point.js_color-change-point

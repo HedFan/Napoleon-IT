@@ -1,0 +1,10 @@
+- var rubricItems = [{class: 'n-litera', img: imgHrI + "n-litera.png", href: logoLink, head: "Логотип", dscr: "Правила использования, версии для скачивания"}, {class: 'cycle', img: imgHrI + "cycle.png", href: colLink, head: "Цвет", dscr: "Описание и правила использования"}, {class: 'um-litera', img: imgHrI + "um-litera.png", href: defLink, head: "Шрифты", dscr: "Схемы и типографика, работа с текстом"}, {class: 'template', img: imgHrI + "folder-back.png", href: defLink, head: "Исходники", dscr: "Исходные макеты для изменения информации"}]
+.rubrics-block
+ each rubricItem in rubricItems
+  .rubrics-block__item.rubrics-item(class=`rubrics-item--${rubricItem.class}`)
+   .rubrics-item__image
+    img(src=rubricItem.img alt=rubricItem.head)
+   .rubrics-item__info
+    .rubrics-item__heading
+     a(href=rubricItem.href)= rubricItem.head
+    .rubrics-item__dscr= rubricItem.dscr
