@@ -11,7 +11,7 @@
 8. В карточке с исходниками горизонтально двигается флажок у папки по ховеру. <br/>
 <br/>
 
-###[Ссылка на страницу после pug](https://hedfan.github.io/napoleon-IT/html/index.html)
+### [Ссылка на страницу после pug](https://hedfan.github.io/napoleon-IT/html/index.html)
 <br/>
 
 Использование препроцессора pug, сборка осуществлялась с помощью gulp-а
